@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var a=4,
+            b=2,
+            c=1;
+        var diskriminant=((b*b)-(4*a*c));
+        if (diskriminant<0){
+            console.log("No real roots");
+        }
+        else {
+            var x1=(((-1)*b)+Math.sqrt(diskriminant))/(2*a);
+            var x2=(((-1)*b)-Math.sqrt(diskriminant))/(2*a);
+            if (x1===x2){
+                console.log("X= "+x1);
+            }
+            else{
+                console.log("X1="+x1);
+                console.log("X2="+x2);
+            }
+        }
+
+    </script>
+</body>
+</html>
